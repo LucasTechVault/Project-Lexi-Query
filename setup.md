@@ -42,28 +42,5 @@ pip install \
 
 ```
 
-3. Create config layer
-
-```
-APP_ENV=dev
-
-# Local storage
-CHROMA_DIR=storage/chroma
-DATA_DIR=data
-
-# Embedding model
-EMBED_MODEL=BAAI/bge-large-en-v1.5
-
-# Remote vLLM endpoint
-VLLM_BASE_URL=http://<REMOTE_H100_HOST>:8000/v1
-VLLM_API_KEY=token-abc123
-VLLM_MODEL=meta-llama/Llama-3.3-70B-Instruct
-
-# Retrieval
-TOP_K=12
-FINAL_CONTEXT_K=5
-CHUNK_SIZE=800
-CHUNK_OVERLAP=120
-```
-
+3. Create config layer (.env)
 4. Create /app/config/settings.py
