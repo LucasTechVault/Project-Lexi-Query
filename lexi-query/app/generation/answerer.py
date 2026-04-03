@@ -8,7 +8,7 @@ class RagAnswerer:
         self.retriever = DenseRetriever()
 
     def answer(self, question: str):
-        chunks = self.retriever.retrieve(question, top_k=settings.final_context_k)
+        chunks = self.retriever.retrieve_single_query(question, top_k=settings.final_context_k)
         messages = build_messages(question, chunks)
         answer = chat_completion(messages)
         return {

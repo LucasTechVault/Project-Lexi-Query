@@ -1,4 +1,6 @@
-.env
+lexi-query/.env
 lexi-query/.venv/
 .venv/
 ProjectLexiQuery_Learnings.docx
+lexi-query/data
+lexi-query/storage
