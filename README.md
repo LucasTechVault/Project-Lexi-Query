@@ -1,4 +1,4 @@
-# Project LexiQuery - Financial RAG Pipeline
+# LexiQuery - Financial RAG Pipeline
 
 ## Project Overview
 
